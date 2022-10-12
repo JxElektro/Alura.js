@@ -13,11 +13,21 @@ class cuentaCorriente {
     this.balance = 0;
   }
   deposit(amount) {
-    this.balance += amount;
+    console.log("Depositando " + amount + " en la cuenta de " + this.client.name);
+    if (amount > 0) {
+      this.balance += amount;
+    } else {
+      console.log("No se puede depositar una cantidad negativa");
+    }
   }
 
   withdraw(amount) {
-    this.balance -= amount;
+    console.log("Retirando " + amount);
+    if (this.balance >= amount) {
+      this.balance -= amount;
+    } else {
+      console.log("No tienes suficiente saldo");
+    }
   }
 
 }
@@ -32,8 +42,8 @@ cuentaCorriente1.client = client1;
 cuentaCorriente1.balance = 1000;
 cuentaCorriente1.number = 12345678;
 
-cuentaCorriente1.deposit(1000);
-console.log(cuentaCorriente1);
+
+
 
 const cuentaCorriente2 = new cuentaCorriente();
 const client2 = new client();
@@ -46,4 +56,6 @@ cuentaCorriente2.client = client2;
 cuentaCorriente2.balance = 1000;
 cuentaCorriente2.number = 87654321;
 
-console.log(cuentaCorriente2);
+
+cuentaCorriente1.deposit(1000);
+//cuentaCorriente2.deposit(1000);
