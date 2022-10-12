@@ -1,0 +1,20 @@
+{
+  "name": "cuentasbanco",
+  "version": "1.0.0",
+  "description": "Gestion de Cuentas",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JxElektro/Alura.js.git"
+  },
+  "author": "Jhen",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/JxElektro/Alura.js/issues"
+  },
+  "homepage": "https://github.com/JxElektro/Alura.js#readme"
+}
